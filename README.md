@@ -46,7 +46,7 @@ Emotion-to-Image-Generation/
 │
 ├── emotion-image-generation.ipynb
 ├── emotion-image-pipeline.ipynb
-├──README.md
+├── README.md
 
 ```
 
@@ -108,7 +108,7 @@ This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Supritkumar RP**
 
