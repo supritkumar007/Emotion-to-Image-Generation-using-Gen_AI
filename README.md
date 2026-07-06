@@ -46,6 +46,7 @@ Emotion-to-Image-Generation/
 │
 ├── emotion-image-generation.ipynb
 ├── emotion-image-pipeline.ipynb
+├──README.md
 
 ```
 
