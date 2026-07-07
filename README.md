@@ -13,32 +13,8 @@ This project bridges natural language understanding and visual generative AI in 
 
 ## Architecture
 
-```
- Input Text
-     │
-     ▼
-┌─────────────────────┐
-│  RoBERTa Classifier  │  → fine-tuned on GoEmotions (28 → 7 emotions)
-│  (Emotion Detection) │
-└─────────┬────────────┘
-          ▼
-┌─────────────────────┐
-│  Dynamic Prompt       │  → maps emotion + scene keywords → text prompt
-│  Generator            │
-└─────────┬────────────┘
-          ▼
-┌─────────────────────┐
-│  Stable Diffusion     │  → Realistic Vision V5.1 + DPM++ scheduler
-│  (Image Generation)   │
-└─────────┬────────────┘
-          ▼
-┌─────────────────────┐
-│  BLIP Captioning +    │  → validates semantic alignment
-│  CLIP Ranking         │
-└─────────┬────────────┘
-          ▼
-   Final Ranked Image(s)
-```
+<img width="1024" height="559" alt="genai-architecture" src="https://github.com/user-attachments/assets/48bd85dc-6e8c-4fca-b6ab-7bcfb5183217" />
+
 
 ## Repository Structure
 
@@ -131,6 +107,7 @@ result = run_pipeline("I just finished my final exam and I can't stop smiling!")
 # → Generated prompt: "student smiling after exam, joyful expression, realistic photo"
 # → Output: ranked images + captions + CLIP scores
 ```
+<img width="930" height="642" alt="Screenshot 2026-07-07 135441" src="https://github.com/user-attachments/assets/6d67bf25-919a-435a-a6cc-f45402a1ee9b" />
 
 ## Future Improvements
 
